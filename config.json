@@ -1,0 +1,7 @@
+{
+  "pipeline": "spacy_sklearn",
+  "path" : "models/",
+  "data" : "data/startup-data.json",
+  "server_model_dirs" : "./model_YYYYMMDD-HHMMSS",
+  "num_threads":100
+}

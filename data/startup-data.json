@@ -1,0 +1,361 @@
+﻿{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "Mumbai",
+        "synonyms": ["Bombay", "mumba"]
+      },
+      {
+        "value": "Bangalore",
+        "synonyms": ["Benglaru", "Bangalore"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "howdy", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hey there",
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hello", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hi", 
+        "intent": "greet", 
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yep", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yeah", 
+        "intent": "affirm", 
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for a startup in Delhi",
+        "intent": "startup_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking for a startup in Mumbai",
+        "intent": "startup_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "Mumbai",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking for startups in Bangalore",
+        "intent": "startup_search",
+        "entities": [
+          {
+            "start": 28,
+            "end": 36,
+            "value": "Bangalore",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking for a startup in Banglore",
+        "intent": "startup_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 37,
+            "value": "Banglore",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking for a startup in Gurgaon",
+        "intent": "startup_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 36,
+            "value": "Gurgaon",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking for a startup in Goa",
+        "intent": "startup_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 32,
+            "value": "Goa",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "top 5 startups",
+        "intent": "startup_info",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "startups",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "top 5 industries",
+        "intent": "startup_info",
+        "entities": [
+          {
+            "start": 6,
+            "end": 16,
+            "value": "industries",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "top 5 cities",
+        "intent": "startup_info",
+        "entities": [
+          {
+            "start": 6,
+            "end": 12,
+            "value": "cities",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "top 5 investors",
+        "intent": "startup_info",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "investors",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "Top 5 type of funding",
+        "intent": "startup_info",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "type",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "top 5 industries",
+        "intent": "startup_info",
+        "entities": [
+          {
+            "start": 6,
+            "end": 16,
+            "value": "industries",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "top 5 categories",
+        "intent": "startup_info",
+        "entities": [
+          {
+            "start": 6,
+            "end": 16,
+            "value": "categories",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "which city has the most startups?",
+        "intent": "startup_info",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "city",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "top 5 cities for a startup",
+        "intent": "startup_info",
+        "entities": [
+          {
+            "start": 6,
+            "end": 12,
+            "value": "cities",
+            "entity": "query"
+          }
+        ]
+      }
+    ]
+  }
+}

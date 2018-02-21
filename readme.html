@@ -1,0 +1,28 @@
+Create a chatbot with Flask, Python and Rasa NLU
+
+using supervised training
+
+Backend:
+step1) Startup csv data file from Kaggle
+step2) Use Jupyter notebook for data analysis
+step3) Create training data json file using rasa nlu trainer: https://rasahq.github.io/rasa-nlu-trainer/
+step4) mkdir startbot
+step5) mkdir startbot/data to store the  startup data json file
+       data files : data/startup-data.json
+step6) Cretae a config file that uses spacy for NLP, model directory to store the trained model
+       config.json
+step7) Train the chatbot using rasa_nlu and config by running the  following command
+       python -m rasa_nlu.train -c config.json
+       This will create a model in the directory specified (models) in the config files with the timestamp
+step8) Set up http server to run with the config file and latest model
+       python -m rasa_nlu.server -c config.json 
+step9) To setup the knowledge base for the startbot create a knowledge file with responses using python dictionary.
+        knowledge.py
+
+Frontend:
+Flask application
+Step1) Create templates folder and the following templates: layout.html, index.html
+Step2) Create static folder and css and js sub folders: css/chat-interface.css, js/bind.js
+Step3) Use bootstrap, googlefontapi
+Step4) Create app.py : main flask application
+       python app.py to begin
